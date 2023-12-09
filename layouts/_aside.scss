@@ -1,0 +1,21 @@
+#aside {
+    grid-column: 1/2;
+    grid-row: 1/6;
+    background-color: #b89c8099;
+    div {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2225;
+        img {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width:1290px) {
+    #aside {
+        display: none;
+    }
+}

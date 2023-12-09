@@ -1,0 +1,80 @@
+#main {
+    width: 50vw;
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+    padding: 3em;
+    background-color: #1117;
+    color: #fee;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+
+    section {
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            font-size: 1.3em;
+            p {
+                width: 70%;
+                background-color: #2227;
+                border-radius: 50%;
+                box-shadow: 0px 0px 50px #222f;
+            }
+            a {
+                padding: 1em;
+                color: #322;
+                background-color: #fee;
+                border-radius: 3em;
+                width: fit-content;
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: end;
+        align-items: end;
+        a {
+            color: #fee;   
+            width: 4em;
+        }
+    }
+}
+
+@media (max-width:1520px) {
+    #main {
+        section {
+            article {
+                p {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+
+
+}
+
+@media (max-width:1290px) {
+
+    #main {
+        width: 100%;
+        padding: 10em 10em 1em 10em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3em;
+        section {
+            article {
+                p {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+}
